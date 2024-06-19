@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Add this before the closing </body> tag -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form" class="form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <button onclick="login()">Login</button>
+                <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+            </div>
+            <div id="signup-form" class="form hidden">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" id="new-username">
+                <input type="password" placeholder="Password" id="new-password">
+                <button onclick="signup()">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
